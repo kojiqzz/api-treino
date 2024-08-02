@@ -23,6 +23,8 @@ servidor.get('/calculadora/soma/:n1/:n2', (req, resp) => {
     })   
 })
 
+
+
 // ola tudo bem 
 servidor.get('/calculadora/subtrair/:n1/:n2', (req, resp) => {
     let n1=Number(req.params.n1)
@@ -39,8 +41,4 @@ servidor.get('/calculadora/subtrair/:n1/:n2', (req, resp) => {
     })
 })
 
-servidor.listen(2008, () => console.log("api subiu na porta 2008"))
-
-
-
-;
+servidor.listen(2008, () => console.log("api subiu na porta 2008"));
